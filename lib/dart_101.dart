@@ -147,23 +147,3 @@ void main() {
     print(doWhileNumber);
   } while (doWhileNumber < 5);
 }
-
-// Answers to conceptual questions:
-
-// 9. Question: Will myNumber = "Hello" work?
-// Answer: No, this code will not work. In Dart, when you use 'var' with an initial 
-// value, the type is inferred and fixed. Since myNumber was initialized with an 
-// integer (100), it becomes an int type variable. You cannot later assign a String 
-// value to an int variable because Dart is a statically typed language.
-
-// 10. Question: Will reassigning final city work?
-// Answer: No, this code will not work. The 'final' keyword in Dart creates a 
-// variable that can only be set once. Once a value is assigned to a final 
-// variable, it cannot be changed. Attempting to change the value from "Bangkok" 
-// to "Chiang Mai" will result in a compile-time error.
-
-// 12. Question: Will flexibleNumber work?
-// Answer: Yes, this code will work. The 'num' type in Dart is a supertype of 
-// both 'int' and 'double'. Therefore, a num variable can hold either integer 
-// or decimal values. You can freely assign any numeric value (integer or decimal) 
-// to a num variable.
