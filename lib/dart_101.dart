@@ -32,9 +32,17 @@ void main() {
    and I am $age years old.");
 
   // 9. Variable type inference demonstration
-  var myNumber = 100;
-  print(myNumber);  // Print to avoid unused variable warning
-  // myNumber = "Hello";  // This will cause a type error - explained below
+  var myNumber = 100;    // กำหนดค่าเริ่มต้นเป็น 100
+  print("ค่าเริ่มต้นของ myNumber: $myNumber");
+  
+  // บรรทัดด้านล่างนี้จะทำให้เกิด Error เพราะพยายามกำหนดค่า String ให้กับตัวแปรที่เป็น int
+  // myNumber = "Hello";  // Error: A value of type 'String' can't be assigned to a variable of type 'int'
+  
+  /* อธิบาย:
+   * 1. เมื่อใช้ var และกำหนดค่า 100 Dart จะกำหนดให้ myNumber เป็นชนิด int โดยอัตโนมัติ
+   * 2. เมื่อพยายามกำหนดค่า "Hello" ซึ่งเป็น String จะทำไม่ได้
+   * 3. เพราะ Dart เป็นภาษา Static Type ไม่สามารถเปลี่ยนชนิดข้อมูลหลังจากประกาศแล้ว
+   */
 
   // 10. Final variable demonstration
   final city = "Bangkok";
